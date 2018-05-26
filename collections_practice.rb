@@ -37,10 +37,7 @@ end
 
 def add_s(array)
   array.each_with_index.collect do |element, index|
-    if index = 1
-      element.concat("")
-    else
-      element.concat("s")
+      element[index].concat("s")
     end
   end
 end
