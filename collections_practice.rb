@@ -39,10 +39,11 @@ array = ["hand", "feet", "knee", "table"]
 
 def add_s(array)
   array.each_with_index.collect do |element, index|
-    if index = 1
-    element.concat("s")
+    if index != 1
+      element.concat("s")
+    else
+      element.concat("")
+      
     end
   end
 end
-
-
