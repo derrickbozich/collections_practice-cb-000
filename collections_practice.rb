@@ -35,9 +35,14 @@ def sum_array(array)
   array.inject(0) { |result, element| result + element }
 end
 
+array = ["hand", "feet", "knee", "table"]
+
 def add_s(array)
   array.each_with_index.collect do |element, index|
-    puts index
+    if index = 1
     element.concat("s")
+    end
   end
 end
+
+
