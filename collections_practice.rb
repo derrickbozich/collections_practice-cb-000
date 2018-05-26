@@ -43,7 +43,6 @@ def add_s(array)
       element.concat("s")
     else
       element.concat("")
-      
     end
   end
 end
